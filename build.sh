@@ -7,6 +7,6 @@ if [ $? = 0 ]; then
 fi
 
 docker build \
--t kmahara/c7-apache-php73 \
+-t trasis/c7-apache-php73 \
 $OPT \
 .
