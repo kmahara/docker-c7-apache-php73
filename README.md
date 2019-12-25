@@ -4,13 +4,15 @@ CentOS 7 + Apche 2.4 + PHP 7.3
 
 ## Installed PHP Modules
 * php-mbstring
-* php-pdo
 * php-gd
 * php-xml
 * php-mcrypt
 * php-xdebug
 * php-opcache
 * php-pecl-apcu
+* php-pdo
+* php-mysql
+* php-pgsql
 
 ## Default Directories
 

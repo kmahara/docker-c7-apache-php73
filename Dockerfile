@@ -3,7 +3,7 @@ EXPOSE 80
 CMD [ "/run.sh" ]
 
 RUN yum -y install telnet httpd mod_ssl less http://rpms.famillecollet.com/enterprise/remi-release-7.rpm && \
-	yum -y install --enablerepo=remi,remi-php73 php php-mbstring php-pdo php-gd php-xml php-mcrypt php-xdebug php-opcache php-pecl-apcu
+	yum -y install --enablerepo=remi,remi-php73 php php-mbstring php-gd php-xml php-mcrypt php-xdebug php-opcache php-pecl-apcu php-pdo php-mysql php-pgsql
 COPY data /tmp
 RUN /tmp/install.sh
 RUN mv /tmp/run.sh /
